@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>health+ - LOGIN</title>
+  <link rel="stylesheet" th:href="@{/css/index.css}">
+</head>
+
+<body>
+    <div class="container">
+      <img th:src="@{/img/icon.png}" alt="">
+        <!-- Formulário de login -->
+        <form id="login">
+            <!-- Campo de entrada para o nome de usuário -->
+            <label for="username">LOGIN:</label>
+            <input type="text" id="username" name="username">
+            <!-- Campo de entrada para a senha -->
+            <label for="senha">SENHA:</label>
+            <input type="password" id="password" name="password">
+            <!-- Botão de login -->
+            <button type="button" onclick="login()">ENTRAR</button>
+        </form>
+        <!-- Botão de cadastro -->
+        <a th:href="@{/cadastro}"><button class="btn-cadastro" type="button">CADASTRE-SE</button></a>
+    </div>
+</body>
+
+</html>

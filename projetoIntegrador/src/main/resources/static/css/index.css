@@ -1,0 +1,53 @@
+@font-face {
+  font-family: RetroGaming;
+    src: url(../font/RetroGaming.ttf)
+}
+ 
+body {
+    font-family: RetroGaming;
+    font-size: 25px;
+    background-image: url(../img/background1.png);
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+ .container {
+    width: 90%;
+    max-width: 380px;
+    padding: 20px;
+    background-color: #FFFFFF;
+  }
+
+ input[type="text"], input[type="password"] {
+    font-family: RetroGaming;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #b8c6d4;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+ button {
+    font-family: RetroGaming;
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #FD141E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #6CC62C;
+  }
+
+  .btn-cadastro {
+    margin-top: 10px;
+  }
