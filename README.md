@@ -7,6 +7,7 @@ O +HEALTH é um site para a organização e acessibilidade de usuários que dese
 # Tecnologias utilizadas
 - Java
 - MySQL
+- HTML
 - CSS
 - Editor
 
