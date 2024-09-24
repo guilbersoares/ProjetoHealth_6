@@ -1,29 +1,29 @@
 <html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
     <head>
-        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>health+ - homepage</title>
+        <title>health+</title>
         <link rel="stylesheet" th:href="@{/css/homepage.css}">
     </head>
     <body>
- <header>
+<body>
+    <header>
         <h1>health+</h1>
     </header>
 
     <div class="container">  
         <div class="notice">
-        <img th:src="@{/img/gif1.gif}" alt="">
+            <img th:src="@{../img/gif1.gif}" alt="">
             <p>CALCULE SEU IMC PARA SEGUIR A DIETA IDEAL PARA VOCÊ
         <form id="consulta-imc">
         <label for="peso">PESO</label>
-        <input type="text" id="peso" required placeholder="Peso">
+        <input type="text" id="peso" required placeholder="Ex: 50">
 
         <label for="altura">ALTURA</label>
-        <input type="text" id="altura" required placeholder="Altura">
+        <input type="text" id="altura" required placeholder="Ex: 180">
         </form>
     </br>
-        <a href=""><button class="btn-cadastro" type="button">CALCULAR</button></a>
+        <a th:href="@{/dieta}"><button class="btn-cadastro" type="button">CALCULAR</button></a>
     </div>
     </div>
    

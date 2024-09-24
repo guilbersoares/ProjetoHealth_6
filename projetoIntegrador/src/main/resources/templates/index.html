@@ -3,27 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>health+ - LOGIN</title>
+  <title>health+</title>
   <link rel="stylesheet" th:href="@{/css/index.css}">
 </head>
-
 <body>
     <div class="container">
-      <img th:src="@{/img/icon.png}" alt="">
-        <!-- Formulário de login -->
-        <form id="login">
-            <!-- Campo de entrada para o nome de usuário -->
+      <img th:src="@{../img/icon.png}" alt="">
+        <form th:action="@{/login}" method="post" th:object="${user}">
             <label for="username">LOGIN:</label>
-            <input type="text" id="username" name="username">
-            <!-- Campo de entrada para a senha -->
-            <label for="senha">SENHA:</label>
-            <input type="password" id="password" name="password">
-            <!-- Botão de login -->
-            <button type="button" onclick="login()">ENTRAR</button>
+            <input type="text" id="username" th:field="*{username}">
+
+            <label for="password">SENHA:</label>
+            <input type="password" id="password" th:field="*{password}">
+
+            <button type="submit">ENTRAR</button>
         </form>
-        <!-- Botão de cadastro -->
+      
         <a th:href="@{/cadastro}"><button class="btn-cadastro" type="button">CADASTRE-SE</button></a>
     </div>
 </body>
-
 </html>

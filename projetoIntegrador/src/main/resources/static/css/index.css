@@ -14,16 +14,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
+}
   
- .container {
+.container {
     width: 90%;
     max-width: 380px;
     padding: 20px;
     background-color: #FFFFFF;
-  }
+}
 
- input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"] {
     font-family: RetroGaming;
     width: calc(100% - 20px);
     padding: 10px;
@@ -31,9 +31,9 @@ body {
     border: 1px solid #b8c6d4;
     border-radius: 4px;
     box-sizing: border-box;
-  }
+}
 
- button {
+input[type="submit"] {
     font-family: RetroGaming;
     width: calc(100% - 20px);
     padding: 10px;
@@ -42,12 +42,27 @@ body {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
+}
 
-  button:hover {
+input[type="submit"]:hover {
     background-color: #6CC62C;
-  }
+}  
+  
+button {
+    font-family: RetroGaming;
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #FD141E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-  .btn-cadastro {
+button:hover {
+    background-color: #6CC62C;
+}
+
+.btn-cadastro {
     margin-top: 10px;
-  }
+}

@@ -12,7 +12,7 @@ public class viewController {
     
     @RequestMapping("/")
     public String index(){
-        return "homepage";
+        return "index";
     }
     
     @RequestMapping(method=RequestMethod.GET, value="/cadastro")

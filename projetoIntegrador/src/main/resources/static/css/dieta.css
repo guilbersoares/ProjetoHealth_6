@@ -1,0 +1,33 @@
+@font-face {
+   font-family: RetroGaming;
+   src: url(../font/RetroGaming.ttf)
+}
+
+.image-container {
+    text-align: center;
+}
+
+.dieta {
+    text-align: center;
+}
+
+body {
+    font-family: RetroGaming;
+    color: #504B4C;
+    font-size: 18px;
+    background-image: url(../img/background5.png);
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.container {
+    width: 90%;
+    max-width: 380px;
+    padding: 20px;
+    background-color: #FFFFFF;
+}
